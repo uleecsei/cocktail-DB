@@ -1,0 +1,36 @@
+@import "../scss/variables.scss";
+
+.filter {
+  position: relative;
+  width: 220px;
+  background: $white;
+  font-family: Roboto, sans-serif;
+
+  &__inner {
+    position: absolute;
+    width: 180px;
+    padding: 20px;
+  }
+
+  &__submit {
+    background: $darkgray;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+    height: 39px;
+    font-weight: bold;
+    color: $white;
+  }
+}
+
+.filter-item {
+  font-family: Roboto, sans-serif;
+  color: $gray;
+  display: flex;
+  height: 19px;
+  margin-bottom: 20px;
+
+  &__checkbox {
+    margin-right: 10px;
+  }
+}

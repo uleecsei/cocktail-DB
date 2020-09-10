@@ -1,0 +1,16 @@
+<app-filter (upload)="uploadCards($event)"></app-filter>
+<div class="content">
+  <div class="content__wrapper" *ngFor="let section of sections">
+    <h3 class="content__title">
+      {{section.name}}
+    </h3>
+    <div class="content__container">
+      <ng-container *ngFor="let card of section.cards">
+        <div class="card">
+          <img [src]="card.strDrinkThumb" [alt]="card.strDrink" class="card__image" />
+          <div class="card__title">{{card.strDrink}}</div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

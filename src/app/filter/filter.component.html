@@ -1,0 +1,15 @@
+<div class="filter">
+  <div class="filter__inner">
+    <div class="filter-item" *ngFor="let item of filterItems">
+      <label class="filter-item__title"
+        ><input
+          type="checkbox"
+          [checked]="item.isChecked"
+          (change)="item.isChecked = !item.isChecked"
+          class="filter-item__checkbox"
+        />{{item.strCategory}}</label
+      >
+    </div>
+    <button class="filter__submit" (click)="reloadCards()">APPLY</button>
+  </div>
+</div>
